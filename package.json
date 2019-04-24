@@ -1,0 +1,71 @@
+{
+  "name": "spannable-string-extension",
+  "version": "0.2.0",
+  "description": "Zeplin extension that generates Spannable Strings for texts with multiple styles.",
+  "repository": "http://github.com/kardeslik/zeplin-spannable-string-extension",
+  "author": {
+    "name": "Emmar Kardeslik",
+    "email": "emmar.kardeslik@gmail.com",
+    "url": "https://github.com/kardeslik"
+  },
+  "scripts": {
+    "start": "zem start",
+    "build": "zem build",
+    "clean": "zem clean",
+    "exec": "zem exec",
+    "publish": "zem publish"
+  },
+  "zeplin": {
+    "displayName": "Spannable String Extension",
+    "projectTypes": [
+      "android"
+    ],
+    "options": [
+      {
+        "name": "Language",
+        "type": "picker",
+        "id": "language",
+        "submenu": true,
+        "options": [
+          {
+            "name": "Java",
+            "value": "java"
+          },
+          {
+            "name": "Kotlin",
+            "value": "kotlin"
+          }
+        ],
+        "default": "kotlin"
+      },
+      {
+        "name": "Flag",
+        "type": "picker",
+        "id": "flag",
+        "submenu": true,
+        "options": [
+         {
+            "name": "SPAN_EXCLUSIVE_EXCLUSIVE",
+            "value": "exclusive_exclusive"
+          },
+          {
+            "name": "SPAN_EXCLUSIVE_INCLUSIVE",
+            "value": "exclusive_inclusive"
+          },
+          {
+            "name": "SPAN_INCLUSIVE_EXCLUSIVE",
+            "value": "inclusive_exclusive"
+          },
+          {
+            "name": "SPAN_INCLUSIVE_INCLUSIVE",
+            "value": "inclusive_inclusive"
+          }
+        ],
+        "default": "exclusive_exclusive"
+      }
+    ]
+  },
+  "dependencies": {
+    "zem": "^0.3.5"
+  }
+}

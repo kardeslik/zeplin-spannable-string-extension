@@ -8,7 +8,7 @@ Supported spans are:
  - [StyleSpan](https://developer.android.com/reference/android/text/style/StyleSpan)
  - [TypefaceSpan](https://developer.android.com/reference/android/text/style/TypefaceSpan)
 
-You can add the extension to your project from [here](https://extensions.zeplin.io/kardeslik/zeplin-spannable-string-extension).
+You can add the extension to your project from [here](https://extensions.zeplin.io/emmar/spannable-string-extension).
 
 ## Options
 
